@@ -1,4 +1,5 @@
-#include "main.h"
+#include <unistd.h>
+#include <main.h>
 /**
  * prints putchar as a message
  *
@@ -6,7 +7,7 @@
  */
 int main(void)
 {
-	int str[] = {45, 112, 117, 116 ,99, 104, 97, 114};
+	int str[] = {45, 112, 117, 116, 99, 104, 97, 114};
 	int count, sz;
 
 	sz = sizeof(str) / sizeof(int);
