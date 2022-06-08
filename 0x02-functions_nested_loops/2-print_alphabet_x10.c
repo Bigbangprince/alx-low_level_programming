@@ -1,19 +1,19 @@
 #include "main.h"
 /**
-* prints putchar as a message
+* print_alphabet_x10 - Prints the alphabet 10 times.
 *
 * Return: Always 0 (Success)
 */
-int main(void)
+void print_alphabet_x10(void)
 {
-	int str[] = {45, 112, 117, 116 ,99, 104, 97, 114};
-	int count, sz;
+	int a, b;
+	for (a = 0; a <= 9; a++)
 
-	sz = sizeof(str) / sizeof(int);
-	for (count = 0; count < sz; count++)
 	{
-		_putchar(str[count]);
-	}
+		for (b = 97; b <= 122; b++)
+		{
+			_putchar(b);
+		}
 	_putchar('\n');
-	return (0);
+	}
 }
