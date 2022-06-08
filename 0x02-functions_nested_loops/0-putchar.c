@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * prints _putchar as a message
- * @c: The character to print
  *
+ * main prints _putchar
  * Return: On success 1
  * On error, -1 is returned, and errno is set appropriately
  */
