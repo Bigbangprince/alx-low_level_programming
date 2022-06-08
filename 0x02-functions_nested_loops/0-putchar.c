@@ -1,9 +1,10 @@
-#include <unistd.h>
-#include <main.h>
+#include "main.h"
 /**
- * prints putchar as a message
+ * prints _putchar as a message
+ * @c: The character to print
  *
- * Return: Always 0 (Success)
+ * Return: On success 1
+ * On error, -1 is returned, and errno is set appropriately
  */
 int main(void)
 {
