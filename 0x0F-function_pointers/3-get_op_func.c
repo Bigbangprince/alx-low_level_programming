@@ -5,8 +5,8 @@
 
 /**
  * get_op_func - get an operation
- * @s: operator
- * Return: No
+ * @s: operator given
+ * Return: pointer to the function that corresponds to the parameter
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -23,12 +23,9 @@ int (*get_op_func(char *s))(int, int)
 
 	while (ops[i].op)
 	{
-		if (strcmp(s, ops[i].op) == 0)
-		{
+		if (strcmp(ops[i].op, s) == 0)
 			return (ops[i].f);
-		}
 		i++;
 	}
-	printf("Error\n");
-	exit(99);
+	return (NULL);
 }
